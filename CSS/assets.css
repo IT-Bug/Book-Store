@@ -1,0 +1,14 @@
+
+.anim-book {
+    height: 70px;
+}
+
+.horizontal-strip {
+    height: 2px;
+    width: 100%;
+    background-color: #5D9BB0;
+}
+
+.book-style {
+    width: 100px;
+}
