@@ -9,8 +9,8 @@ function getTitleTemplate(i){
 
 
 function getContentTemplate(i){
-    let book = books[i];
-    let euroFormat = book.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+    let contentBook = books[i];
+    let euroFormat = contentBook.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
    
     return `
         <div class="price-like-container">
@@ -19,15 +19,24 @@ function getContentTemplate(i){
     
         <div class="category">
             <div>
-                <p><b>Autohr</b></p> 
+                <p><b>Autor</b></p> 
                 <p><b>Erscheinungsjahr</b></p> 
                 <p><b>Genre</b></p>
             </div>
             <div> 
-                <p>: ${book.author}</p>
-                <p>: ${book.publishedYear}</p>
-                <p>: ${book.genre}</p>
+                <p>: ${contentBook.author}</p>
+                <p>: ${contentBook.publishedYear}</p>
+                <p>: ${contentBook.genre}</p>
             </div>
         </div>
     `
+}
+
+function getCommentsTemplate(i){
+    let commentBook = books[i];
+
+    return `
+        <p>${commentBook.comments[1]}</p>
+    `
+
 }

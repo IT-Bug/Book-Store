@@ -2,6 +2,7 @@
 function init(){
     renderTitleName();
     renderContent();
+    renderComments();
 }
 
 function renderTitleName(){
@@ -20,5 +21,14 @@ function renderContent(){
     
     for (let i = 0; i < 1; i++) {
         contentRef.innerHTML += getContentTemplate(i);
+    }
+}
+
+function renderComments(){
+    let commentsRef = document.getElementById('comments');
+    commentsRef.innerHTML = "";
+
+    for (let i = 0; i < 1; i++) {
+        commentsRef.innerHTML += getCommentsTemplate(i);
     }
 }

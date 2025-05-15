@@ -72,6 +72,18 @@ body {
     gap: 10px;
 }
 
+.comment-headline {
+    padding: 10px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.comment-box {
+    width: 100%;
+    height: 90px;
+    overflow-y: auto;
+}
+
 .input-container {
     padding: 10px;
     display: flex;
