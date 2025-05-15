@@ -7,6 +7,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/Logos/FavIcon.png">
     <title>Book Store</title>
     <script src="script.js"></script>
+    <script src="db.js"></script>
+    <script src="templates.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/standard.css">
     <link rel="stylesheet" href="./CSS/assets.css">
@@ -31,7 +33,7 @@
             
             <div class="horizontal-strip"></div>
             
-            <div id="content" class="content">.</div>
+            <div id="content" class="content"></div>
             
             <div class="horizontal-strip"></div>
             
@@ -39,10 +41,7 @@
 
             <div class="input-container"> 
                 <input type="text" placeholder="Schreibe einen Kommentar...">
-            
-                <a onclick="" id="send-button">
-                    <img src="" alt="">
-                </a>
+                <button class="btn" onclick="addComment()">Hinzufügen</button>
             </div>
         </section>
     </main>
