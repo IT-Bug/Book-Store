@@ -1,13 +1,14 @@
 
 function init(){
-    renderPrice();
+    renderContent();
 }
 
-function renderPrice(){
+function renderContent(){
+    let titleRef = document.getElementById('');
     let contentRef = document.getElementById('content');
     contentRef.innerHTML = "";
     
     for (let i = 0; i < 1; i++) {
-        contentRef.innerHTML += getPriceTemplate(i);
+        contentRef.innerHTML += getContentTemplate(i);
     }
 }

@@ -50,6 +50,15 @@ body {
 
 .content {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category {
+    color: aliceblue;
+    display: flex;
+    gap: 10px;
 }
 
 .input-container {
