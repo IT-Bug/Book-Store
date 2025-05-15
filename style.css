@@ -19,16 +19,16 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-height: 100vh;
+    height: 100vh;
     gap: 20px;
 }
 
 .popup-container {
-    background-color: aliceblue;
     border-radius: 15px;
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    width: 300px;
     background-color: #0A3949;
+    
 } 
 
 .title {
@@ -46,4 +46,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.input-container {
+    padding: 10px;
+    display: flex;
 }
