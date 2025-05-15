@@ -1,6 +1,8 @@
 
-function getPriceTemplate(indexPrice){
+function getPriceTemplate(i){
+    let book = books[i];
     return `
-        <p>${books[indexPrice]}}</p>
+        <strong>${book.price.toFixed(2)} €</strong>
+        <p></p>
     `
 }

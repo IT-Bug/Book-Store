@@ -48,6 +48,10 @@ body {
     justify-content: center;
 }
 
+.content {
+    padding: 20px;
+}
+
 .input-container {
     padding: 10px;
     display: flex;

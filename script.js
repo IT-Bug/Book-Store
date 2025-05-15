@@ -6,9 +6,8 @@ function init(){
 function renderPrice(){
     let contentRef = document.getElementById('content');
     contentRef.innerHTML = "";
-    books.findIndex((price) => { return price["price"] == true});
     
-    for (let indexPrice = 0; indexPrice < books.length; indexPrice++) {
-        contentRef.innerHTML += getPriceTemplate(indexPrice);
+    for (let i = 0; i < 1; i++) {
+        contentRef.innerHTML += getPriceTemplate(i);
     }
 }
