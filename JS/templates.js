@@ -1,3 +1,5 @@
+
+
 function getTitleTemplate(i){
     let titleBook = books[i];
     return `
@@ -8,10 +10,11 @@ function getTitleTemplate(i){
 
 function getContentTemplate(i){
     let book = books[i];
+    let euroFormat = book.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+   
     return `
-        <div>
-            <b>${book.price.toFixed(2)} €</b>
-            <button>Heart</button>
+        <div class="price-like-container">
+            <p class="price-style">${euroFormat}</p>
         </div>
     
         <div class="category">

@@ -48,6 +48,17 @@ body {
     justify-content: center;
 }
 
+.price-like-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-style {
+    font-weight: bold;
+    color: rgb(239, 122, 122);
+    font-size: 19px;
+}
+
 .content {
     padding: 20px;
     display: flex;
