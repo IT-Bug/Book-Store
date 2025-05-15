@@ -79,9 +79,14 @@ body {
 }
 
 .comment-box {
-    width: 100%;
+    width: 90%;
     height: 90px;
     overflow-y: auto;
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: small;
+
 }
 
 .input-container {

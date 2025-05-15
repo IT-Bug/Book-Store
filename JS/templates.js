@@ -35,8 +35,18 @@ function getContentTemplate(i){
 function getCommentsTemplate(i){
     let commentBook = books[i];
 
+    for (let i = 0; i < commentBook.comments.length; i++) {
+        let user = commentBook.comments[i];
+    
     return `
-        <p>${commentBook.comments[1]}</p>
-    `
+        <div>
+            <p><b>${user.name}</b></p> 
+        </div>
+        <div>
+            <p>: ${user.comment}</p>
+        </div>
 
+
+        `
+    }
 }

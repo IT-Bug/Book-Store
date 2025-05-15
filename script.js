@@ -28,7 +28,7 @@ function renderComments(){
     let commentsRef = document.getElementById('comments');
     commentsRef.innerHTML = "";
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < books.length; i++) {
         commentsRef.innerHTML += getCommentsTemplate(i);
     }
 }
