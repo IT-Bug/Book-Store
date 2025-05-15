@@ -1,3 +1,10 @@
+function getTitleTemplate(i){
+    let titleBook = books[i];
+    return `
+        <p>${titleBook.name}</p>
+    `
+}
+
 
 function getContentTemplate(i){
     let book = books[i];

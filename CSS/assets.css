@@ -10,5 +10,12 @@
 }
 
 .book-style {
-    width: 100px;
+    width: 200px;
+}
+
+.input-field {
+    background-color: #5D9BB0;
+    border: none;
+    border-bottom: #ff8a05 2px;
+    width: 100%;
 }
