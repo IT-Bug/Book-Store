@@ -1,4 +1,7 @@
 
+function init(){
+    renderPrice();
+}
 
 function renderPrice(){
     let contentRef = document.getElementById('content');
