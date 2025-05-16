@@ -10,7 +10,7 @@ function renderTitleName(){
     titleRef.innerHTML = "";
 
     for (let i = 0; i < 1; i++) {
-        titleRef.innerHTML += getTitleTemplate(i);
+        titleRef.innerHTML = getTitleTemplate(i);
     }
 }
 
@@ -20,7 +20,7 @@ function renderContent(){
     contentRef.innerHTML = "";
     
     for (let i = 0; i < 1; i++) {
-        contentRef.innerHTML += getContentTemplate(i);
+        contentRef.innerHTML = getContentTemplate(i);
     }
 }
 

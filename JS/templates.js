@@ -11,7 +11,7 @@ function getTitleTemplate(i){
 function getContentTemplate(i){
     let contentBook = books[i];
     let euroFormat = contentBook.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
-   
+
     return `
         <div class="price-like-container">
             <p class="price-style">${euroFormat}</p>

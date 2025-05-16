@@ -1,0 +1,58 @@
+/* Scrollbar Generated */
+
+
+body {
+  --sb-track-color: #5d9bb0;
+  --sb-thumb-color: #0a3949;
+  --sb-size: 9px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 8px;
+  border: 1px solid #546e79;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+.comment-box {
+  --sb-track-color: #5d9bb0;
+  --sb-thumb-color: #0a3949;
+  --sb-size: 9px;
+}
+
+.comment-box::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+.comment-box::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 8px;
+}
+
+.comment-box::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 8px;
+  border: 1px solid #546e79;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .comment-box {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
