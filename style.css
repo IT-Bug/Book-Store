@@ -55,6 +55,8 @@ body {
 
 .likes {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
     gap: 20px;
     color: aliceblue;
 }
@@ -86,7 +88,7 @@ body {
 
 .comment-box {
     width: 90%;
-    height: 90px;
+    height: 200px;
     overflow-y: auto;
     color: aliceblue;
     padding-left: 10px;

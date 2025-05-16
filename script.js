@@ -2,6 +2,7 @@
 let currentBookIndex = 0;
 
 function init(){
+    getFromLocalStorage();
     renderTitleName();
     renderContent();
     renderComments();
@@ -58,10 +59,12 @@ function addComment(){
         return
     }
 
-    books[currentBookIndex].comments.push({name: userName, comment: commentInput});
-    
+    books[currentBookIndex].comments.unshift({name: userName, comment: commentInput});
+
+    saveToLocalStorage();
+
     init();
 
-
+    inputUserNameRef.value = "";
     inputTextRef.value = "";
 }
