@@ -68,3 +68,19 @@ function addComment(){
     inputUserNameRef.value = "";
     inputTextRef.value = "";
 }
+
+function likeBook(){
+        let book = books[currentBookIndex];
+
+    if (!book.liked) {
+        book.likes += 1;
+        book.liked = true;
+    } else {
+        book.likes -= 1;
+        book.liked = false;
+    }
+
+    
+    saveToLocalStorage();
+    init();
+}

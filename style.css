@@ -1,3 +1,6 @@
+
+/* First Section */
+
 header {
     background-color: #04242E;
     padding: 10px;
@@ -115,10 +118,26 @@ body {
     color: white;
 }
 
-
 .input-container {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+.input-field {
+    background-color: #5D9BB0;
+    border: none;
+    width: 100%;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+/* Second Section */
+
+.btn-container {
+    display: flex;
+    gap: 150px;
 }
