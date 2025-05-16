@@ -32,3 +32,16 @@ function renderComments(){
         commentsRef.innerHTML += getCommentsTemplate(i);
     }
 }
+
+function addComment(){
+    let inputRef = document.getElementById('input');
+    let commentInput = inputRef.value.trim();
+
+    if (commentInput === ""){
+        alert("Gib ein Kommentar ab, bevor du was versendest :)")
+        inputRef.value = "";
+        return
+    } 
+
+    inputRef.value = "";
+}

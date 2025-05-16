@@ -1,4 +1,5 @@
 
+// Title Template
 
 function getTitleTemplate(i){
     let titleBook = books[i];
@@ -7,6 +8,7 @@ function getTitleTemplate(i){
     `
 }
 
+// Content Template 
 
 function getContentTemplate(i){
     let contentBook = books[i];
@@ -35,6 +37,8 @@ function getContentTemplate(i){
         </div>
     `
 }
+
+// Comment Template
 
 function getCommentsTemplate(i){
     let commentBook = books[i];
