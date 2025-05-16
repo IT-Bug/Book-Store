@@ -29,11 +29,8 @@ function renderContent(){
 
 function renderComments(){
     let commentsRef = document.getElementById('comments');
-    commentsRef.innerHTML = "";
+    commentsRef.innerHTML += getCommentsTemplate(currentBookIndex);
 
-    for (let i = 0; i < books.length; i++) {
-        commentsRef.innerHTML += getCommentsTemplate(currentBookIndex);
-    }
 }
 
 function addComment(){
@@ -67,20 +64,4 @@ function addComment(){
 
     inputUserNameRef.value = "";
     inputTextRef.value = "";
-}
-
-function likeBook(){
-        let book = books[currentBookIndex];
-
-    if (!book.liked) {
-        book.likes += 1;
-        book.liked = true;
-    } else {
-        book.likes -= 1;
-        book.liked = false;
-    }
-
-    
-    saveToLocalStorage();
-    init();
 }
