@@ -1,4 +1,6 @@
 
+let currentBookIndex = 0;
+
 function init(){
     renderTitleName();
     renderContent();
@@ -9,8 +11,8 @@ function renderTitleName(){
     let titleRef = document.getElementById('title');
     titleRef.innerHTML = "";
 
-    for (let i = 0; i < 1; i++) {
-        titleRef.innerHTML = getTitleTemplate(i);
+    for (let i = 0; i < books.length; i++) {
+        titleRef.innerHTML = getTitleTemplate(currentBookIndex);
     }
 }
 
@@ -19,8 +21,8 @@ function renderContent(){
     let contentRef = document.getElementById('content');
     contentRef.innerHTML = "";
     
-    for (let i = 0; i < 1; i++) {
-        contentRef.innerHTML = getContentTemplate(i);
+    for (let i = 0; i < books.length; i++) {
+        contentRef.innerHTML = getContentTemplate(currentBookIndex);
     }
 }
 
@@ -29,19 +31,37 @@ function renderComments(){
     commentsRef.innerHTML = "";
 
     for (let i = 0; i < books.length; i++) {
-        commentsRef.innerHTML += getCommentsTemplate(i);
+        commentsRef.innerHTML += getCommentsTemplate(currentBookIndex);
     }
 }
 
 function addComment(){
-    let inputRef = document.getElementById('input');
-    let commentInput = inputRef.value.trim();
+    let inputUserNameRef = document.getElementById('inputUser');
+    let inputTextRef = document.getElementById('inputText');
+    let userName = inputUserNameRef.value.trim(); 
+    let commentInput = inputTextRef.value.trim();
 
-    if (commentInput === ""){
-        alert("Gib ein Kommentar ab, bevor du was versendest :)")
-        inputRef.value = "";
+    if (userName === "" && commentInput === ""){
+        alert("Gib dein Name und Kommentar ein, bevor du was versendest :)")
+        inputUserNameRef.value = "";
+        inputTextRef.value = "";
+        return 
+    } else if (userName === "") {
+        alert("Vergiss nicht dein Namen zu hinterlassen :)")
+        inputUserNameRef.value = "";
+        inputTextRef.value = "";
+        return 
+    } else if (commentInput === "") {
+        alert("Vergiss nicht zu kommentieren :)")
+        inputUserNameRef.value = "";
+        inputTextRef.value = "";
         return
-    } 
+    }
 
-    inputRef.value = "";
+    books[currentBookIndex].comments.push({name: userName, comment: commentInput});
+    
+    init();
+
+
+    inputTextRef.value = "";
 }
