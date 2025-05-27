@@ -33,7 +33,7 @@ function getContentTemplate(i){
     
         <div class="category">
             <div>
-                <p><b>Autor</b></p> 
+                <p><b>Author</b></p> 
                 <p><b>Erscheinungsjahr</b></p> 
                 <p><b>Genre</b></p>
             </div>

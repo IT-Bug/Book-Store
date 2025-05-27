@@ -29,7 +29,7 @@ function renderContent(){
 
 function renderComments(){
     let commentsRef = document.getElementById('comments');
-    commentsRef.innerHTML += getCommentsTemplate(currentBookIndex);
+    commentsRef.innerHTML = getCommentsTemplate(currentBookIndex);
 
 }
 

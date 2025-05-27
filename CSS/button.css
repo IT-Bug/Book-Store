@@ -95,3 +95,22 @@
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
+
+/* Generated Send Btn */
+
+/* From Uiverse.io by reshades */ 
+.send-btn {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 8em;
+  height: 2.9em;
+  border: #5D9BB0 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.send-btn:hover {
+  background-color: #5D9BB0;
+  cursor: pointer;
+}
