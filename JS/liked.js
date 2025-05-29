@@ -8,7 +8,7 @@ function likeBook() {
         book.liked = false;
     } else {
         book.likes++;
-        book.likes = true;
+        book.liked = true;
     }
 
     likeCountRef.textContent = book.likes;
