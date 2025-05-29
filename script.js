@@ -11,26 +11,21 @@ function init(){
 function renderTitleName(){
     let titleRef = document.getElementById('title');
     titleRef.innerHTML = "";
+    titleRef.innerHTML = getTitleTemplate(currentBookIndex);
 
-    for (let i = 0; i < books.length; i++) {
-        titleRef.innerHTML = getTitleTemplate(currentBookIndex);
-    }
 }
 
 
 function renderContent(){
     let contentRef = document.getElementById('content');
     contentRef.innerHTML = "";
-    
-    for (let i = 0; i < books.length; i++) {
         contentRef.innerHTML = getContentTemplate(currentBookIndex);
-    }
+
 }
 
 function renderComments(){
     let commentsRef = document.getElementById('comments');
     commentsRef.innerHTML = getCommentsTemplate(currentBookIndex);
-
 }
 
 function addComment(){
