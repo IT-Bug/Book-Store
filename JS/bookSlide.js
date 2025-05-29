@@ -15,7 +15,9 @@ function prevBtn(){
     
     currentBookIndex--;
 
-    if (currentBookIndex <= books.length){
-        currentBookIndex = -1;
+    if (currentBookIndex < 0){
+        currentBookIndex = books.length - 1;
     }
+
+    init();
 }
